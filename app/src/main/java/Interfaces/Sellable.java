@@ -5,5 +5,5 @@ package Interfaces;
  */
 
 public interface Sellable {
-    double markup(int sellprice, int buyprice);
+    double markup();
 }

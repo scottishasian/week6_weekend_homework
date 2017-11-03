@@ -18,3 +18,5 @@ public enum Types {
     REEDS
 
 }
+
+// Can set up sub classes with a constructor.

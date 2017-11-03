@@ -13,11 +13,25 @@ public abstract class ShopObjects implements Sellable {
     private Types type;
     private int stock;
 
-    public ShopObjects( double buyPrice, double sellPrice, Types type, int stock) {
+    public ShopObjects( double buyPrice, double sellPrice, Types type) {
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
         this.type = type;
-        this.stock = stock;
+    }
 
+    public double getBuyPrice() {
+        return this.buyPrice;
+    }
+
+    public double getSellPrice() {
+        return this.sellPrice;
+    }
+
+    public Types getType() {
+        return this.type;
+    }
+
+    public double markup() {
+        return this.sellPrice -= this.buyPrice;
     }
 }
