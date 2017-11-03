@@ -6,13 +6,16 @@ package com.example.kynansong.musicshop;
 
 public class Guitar extends Instruments {
 
-    private int GuitarStrings;
+    private int guitarStrings;
 
     public Guitar(double buyPrice, double sellPrice, String colour, String material, String noise, Types type, int guitarStrings) {
         super(buyPrice, sellPrice, colour, material, noise, type);
 
-        this.GuitarStrings = guitarStrings;
+        this.guitarStrings = guitarStrings;
     }
 
+    public int getNumberOfStrings() {
+        return this.guitarStrings;
+    }
 
 }

@@ -24,6 +24,36 @@ public class GuitarTest {
 
     @Test
     public void testGetSellPrice() {
-        assertEquals(40.00, guitar.getSellPrice(), 0.01;
+        assertEquals(40.00, guitar.getSellPrice(), 0.01);
+    }
+
+    @Test
+    public void testGetMarkup() {
+        assertEquals(20.00, guitar.markup(), 0.01);
+    }
+
+    @Test
+    public void testGetColour() {
+        assertEquals("Red", guitar.getColour());
+    }
+
+    @Test
+    public void testGetMaterial() {
+        assertEquals("Wood", guitar.getMaterial());
+    }
+
+    @Test
+    public void testGetNoise() {
+        assertEquals("Strum", guitar.play());
+    }
+
+    @Test
+    public void testGetType() {
+        assertEquals(Types.STRING, guitar.getType());
+    }
+
+    @Test
+    public void testNumberOfStrings() {
+        assertEquals(6, guitar.getNumberOfStrings());
     }
 }
