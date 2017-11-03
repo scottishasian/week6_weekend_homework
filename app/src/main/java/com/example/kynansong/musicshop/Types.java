@@ -11,11 +11,8 @@ public enum Types {
     STRING,
     PERCUSSION,
     WOODWIND,
-    KEYBOARD,
-    BOOK,
-    STRINGS,
-    STICKS,
-    REEDS
+    KEYBOARD
+
 
 }
 
