@@ -14,10 +14,14 @@ public class Shop {
     }
 
 
-    public void AddItemToStock(ShopObjects shopObjects) {
+    public void addItemToStock(ShopObjects shopObjects) {
 
         this.salesItems.add(shopObjects);
 
+    }
+
+    public void removeItemFromStock(int i) {
+        this.salesItems.remove(i);
     }
 
     public int stockCount() {
